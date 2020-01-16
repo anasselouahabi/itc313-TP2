@@ -2,9 +2,9 @@
 #include "Client.h" // la bibliothèque Produit.h est incluse dans Client.h
 
 int main(){
-    Product ps4("PS4","Console de jeu", 5 , 299);
-    Product ps3("PS3","Console de jeu", 5 , 999);
-    Product ps2("PS2","Console de jeu", 5 , 79);
+    Product ps4("PS4","Console de jeu", 10, 9855);
+    Product ps3("PS3","Console de jeu", 10, 754);
+    Product ps2("PS2","Console de jeu", 10 , 23);
 
     std::vector<Product> panierA = {ps4};
 
@@ -14,7 +14,7 @@ int main(){
     clientA.updateQuantity(ps4,2);
 
     std::vector<Product> panierB = {ps2,ps3};
-    Client clientB("Jean","Bernard",panierB);
+    Client clientB("anass","thomas",panierB);
     clientB.updateQuantity(ps3,2);
     clientB.updateQuantity(ps2,1);
 
